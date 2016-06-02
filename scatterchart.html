@@ -1,9 +1,10 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartID1230e8b751a</title>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>ScatterChartID10c830b501a</title>
+<meta http-equiv="content-type" content="text/html;charset=euc-kr" />
 <style type="text/css">
 body {
   color: #444444;
@@ -17,15 +18,15 @@ body {
 </style>
 </head>
 <body>
- <!-- ScatterChart generated in R 3.2.3 by googleVis 0.5.10 package -->
-<!-- Thu Jun 02 17:16:55 2016 -->
+ <!-- ScatterChart generated in R 3.3.0 by googleVis 0.5.10 package -->
+<!-- Thu Jun 02 20:12:32 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartID1230e8b751a () {
+function gvisDataScatterChartID10c830b501a () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -693,20 +694,21 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartID1230e8b751a() {
-var data = gvisDataScatterChartID1230e8b751a();
+function drawChartScatterChartID10c830b501a() {
+var data = gvisDataScatterChartID10c830b501a();
 var options = {};
 options["allowHtml"] = true;
-options["title"] = "Correlation between Life Expectation and Income";
-options["pointShape"] = "polygon";
-options["vAxis"] = {title: 'Income'};
-options["hAxis"] = {title: 'life expectation'};
-options["width"] =    600;
-options["height"] =    350;
+options["title"] = "소득과 인구의 상관관계";
+options["pointShape"] = "square";
+options["vAxis"] = {title: '인구'};
+options["hAxis"] = {title: '소득'};
+options["trendlines"] = "linear";
+options["width"] =    500;
+options["height"] =    400;
 
 
     var chart = new google.visualization.ScatterChart(
-    document.getElementById('ScatterChartID1230e8b751a')
+    document.getElementById('ScatterChartID10c830b501a')
     );
     chart.draw(data,options);
     
@@ -730,9 +732,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartID1230e8b751a);
+callbacks.push(drawChartScatterChartID10c830b501a);
 })();
-function displayChartScatterChartID1230e8b751a() {
+function displayChartScatterChartID10c830b501a() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -756,25 +758,24 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID1230e8b751a"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID10c830b501a"></script>
  
 <!-- divChart -->
   
-<div id="ScatterChartID1230e8b751a" 
-  style="width: 600; height: 350;">
+<div id="ScatterChartID10c830b501a" 
+  style="width: 500; height: 400;">
 </div>
- <div><span>Data: a1 &#8226; Chart ID: <a href="Chart_ScatterChartID1230e8b751a.html">ScatterChartID1230e8b751a</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: a1 &#8226; Chart ID: <a href="Chart_ScatterChartID10c830b501a.html">ScatterChartID10c830b501a</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
-  R version 3.2.3 (2015-12-10) 
+  R version 3.3.0 (2016-05-03) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
 </span></div>
 <p></p>
-<div> 기대수명과 소득과의 상관관계를 살펴보니 
-<p> 기대수명이 늘어날수록 소득도 높게 나타나는 경향성을 확인할 수 있었다.</p>
-<p> 기대수명이 길다는 것은 상대적으로 의료 등 사회시스템이 잘 정비돼 있다는 것이므로</p>
-<p> 소득도 높은 것으로 추론할 수 있다.</p>
+<div> 소득과 인구와의 상관관계를 살펴보니 
+<p> 소득이 적은곳에 인구도 많이 있는 곳이 있고,</p>
+<p> 소득이 적은곳에 인구가 없는 곳이 많이 있었다.</p>
+<p> 따라서 소득과 인구와 의 상관관계는 별로 없다는 사실을 추론할 수 있다.</p>
 </div>
-
 </body>
 </html>
